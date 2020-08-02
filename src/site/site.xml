@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+  ~ Copyright 2019 Sysfoundry (www.sysfoundry.org)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<project name="Kiln">
+    <!--bannerLeft>
+        <name>Kiln</name>
+        <src>images/kiln.svg</src>
+        <href>http://sysfoundry.org/kiln</href>
+        <width>50</width>
+        <height>50</height>
+    </bannerLeft>
+    <bannerRight>
+        <src>http://maven.apache.org/images/maven-small.gif</src>
+    </bannerRight-->
+    <body>
+
+
+        <links>
+            <item name="Sources" href="http://www.apache.org/"/>
+        </links>
+
+
+        <menu name="Documentation">
+            <item name="Introduction" href="index.html"/>
+            <item name="Getting Started" href="getting_started.html"/>
+            <item name="about" href="about.html"/>
+        </menu>
+        <menu name="Info and reports">
+            <item name="Info" href="project-info.html"/>
+            <item name="Reports" href="project-reports.html"/>
+        </menu>
+    </body>
+
+    <custom>
+        <skinConfig>
+            <keywords>Maven Site, fix, HTML5</keywords>
+            <descriptionUrl>Check the documentation for the Docs Maven Skin</descriptionUrl>
+            <twitterSite>@bmg</twitterSite>
+            <topNav>
+                <menu>Documentation</menu>
+                <menu>Info and reports</menu>
+            </topNav>
+            <bottomNav>
+                <menu>General Info</menu>
+                <menu>Code</menu>
+                <menu>Releases</menu>
+            </bottomNav>
+            <iconNav>
+                <menu>Icons</menu>
+            </iconNav>
+        </skinConfig>
+    </custom>
+    <!--skin>
+        <groupId>com.wandrell.maven.skins</groupId>
+        <artifactId>docs-maven-skin</artifactId>
+        <version>1.1.1</version>
+    </skin-->
+    <skin>
+        <groupId>com.bernardomg.maven.skins</groupId>
+        <artifactId>docs-maven-skin</artifactId>
+        <version>${maven-docs-skin.version}</version>
+    </skin>
+</project>
